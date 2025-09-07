@@ -3,8 +3,10 @@
 #include<stdio.h>
 int main()
 {
-   int n=234;
+   int n;
    int count=0;
+   printf("Enter the no. to digit count:");
+   scanf("%d",&n);
    if(n==0)
    {
     count=1;

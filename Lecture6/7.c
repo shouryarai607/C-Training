@@ -3,18 +3,21 @@
 #include<stdio.h>
 int main()
 {
-   int n=234;
-   int count=0;
-   if(n==0)
-   {
-    count=1;
-   }
+   int n;
+   int product=1;
+   int digit;
+   printf("Enter the no.:");
+   scanf("%d",&n);
+   if(n==0){
+      product=0;
+   }else 
    while (n>0)
    {
-    count++;
-    n=n/10;
-    
+      digit = n % 10;
+      product *= digit;
+      n = n / 10;
    }
-   printf("%d",count);
+
+   printf("%d",product);
    return 0;
 }
